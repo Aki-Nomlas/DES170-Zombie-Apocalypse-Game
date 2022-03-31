@@ -184,7 +184,7 @@ a:hover::before {
 
 .titleContainer {
 	background-position: center;
-	background-image: url(/main/data/img/forest.jpg?raw=true);
+	background-image: url(data/img/forest.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	max-height: 100%;
@@ -254,7 +254,7 @@ a:hover::before {
 	&lt;&lt;type 60ms&gt;&gt;\[[Continue|Choice 1 - Night]]\&lt;&lt;/type&gt;&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;mainImg&quot;&gt;
-	[img[house-day|data/img/house.jpg?raw=1]]
+	[img[house-day|data/img/house.jpg]]
 	&lt;/div&gt;
 &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="2" name="Choice 1 - Night" tags="" position="450,397" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
@@ -283,7 +283,7 @@ What would you do?
 &lt;&lt;timed 15s&gt;&gt;&lt;&lt;audio &quot;creak&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/nobr&gt;&gt;
 &lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[interior|main/data/img/interior.jpg]]
+[img[interior|data/img/interior.jpg]]
 &lt;/div&gt;
 	&lt;div class=&quot;mainScript&quot;&gt;
 	&lt;&lt;type 50ms&gt;&gt;\“I guess I should be responsible and sleep on the couch”, you say to yourself.
@@ -348,17 +348,17 @@ You ready your $itemSlot[0] and slowly peek out the front door. You catch the ta
 [[Continue|Horde 1]]
 \&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="StoryInit" tags="" position="746,74" size="200,200">&lt;&lt;cacheaudio &quot;ambient&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/ambient.wav?raw=true&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;door&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/door_sound.mp3?raw=true&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;zombies&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/zombies.wav?raw=true&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;bite&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/bite.wav?raw=true&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;gun&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/shotgun2.mp3?raw=true&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;creak&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/creak.wav?raw=true&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;sword&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/sword.wav?raw=true&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;bush&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/bush.wav?raw=true&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;car&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/car.wav?raw=true&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;click1&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/click1.m4a?raw=true&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;click2&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/click2.m4a?raw=true&quot;&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="StoryInit" tags="" position="746,74" size="200,200">&lt;&lt;cacheaudio &quot;ambient&quot; &quot;data/audio/ambient.wav&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;door&quot; &quot;data/audio/door_sound.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;zombies&quot; &quot;data/audio/zombies.wav&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;bite&quot; &quot;data/audio/bite.wav&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;gun&quot; &quot;data/audio/shotgun2.mp3&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;creak&quot; &quot;data/audio/creak.wav&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;sword&quot; &quot;data/audio/sword.wav&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;bush&quot; &quot;data/audio/bush.wav&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;car&quot; &quot;data/audio/car.wav&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;click1&quot; &quot;data/audio/click1.m4a&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;click2&quot; &quot;data/audio/click2.m4a&quot;&gt;&gt;
 &lt;&lt;script&gt;&gt;
 
 UIBar.stow();
@@ -367,7 +367,7 @@ Config.ui.stowBarInitially = true;
 
 $(document.body).on(&quot;mouseenter&quot;, &quot;a&quot;, function () {
 	$(&quot;&lt;audio&gt;&lt;/audio&gt;&quot;).attr({
-		src      : &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/click1.m4a?raw=true&quot;,
+		src      : &quot;data/audio/click1.m4a&quot;,
 		autoplay : &quot;autoplay&quot;
 	});
 });
@@ -375,7 +375,7 @@ $(document.body).on(&quot;mouseenter&quot;, &quot;a&quot;, function () {
 &lt;&lt;/script&gt;&gt;
 </tw-passagedata><tw-passagedata pid="8" name="Horde 1" tags="" position="405,952" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[zombies|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/zombies.jpg?raw=1]]
+[img[zombies|data/img/zombies.jpg]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
 &lt;&lt;audio &quot;zombies&quot; volume 0.4 loop play&gt;&gt;&lt;&lt;type 50ms&gt;&gt;\
@@ -403,7 +403,7 @@ What do you do?
 
 &lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[interior|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/interior.jpg?raw=1]]
+[img[interior|data/img/interior.jpg]]
 &lt;/div&gt;
 	&lt;div class=&quot;mainScript&quot;&gt;
 	&lt;&lt;type 50ms&gt;&gt;\What &lt;span class=&quot;emphasis&quot;&gt;TWO weapons&lt;/span&gt; do you take with you?
@@ -476,7 +476,7 @@ Are you ready to go?
 &lt;&lt;/nobr&gt;&gt;
 &lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[interior|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/interior.jpg?raw=1]]
+[img[interior|data/img/interior.jpg]]
 &lt;/div&gt;
     &lt;div class=&quot;mainScript&quot; style=&quot;align-self:center;&quot;&gt;
 	&lt;&lt;type 50ms&gt;&gt;You decide to bring $itemSlot[0] and $itemSlot[1].	&lt;&lt;/type&gt;&gt;
@@ -493,7 +493,7 @@ Are you ready to go?
 	&lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Choice 2" tags="" position="55,1241" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[interior|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/interior.jpg?raw=1]]
+[img[interior|data/img/interior.jpg]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
 &lt;&lt;type 50ms&gt;&gt;\
@@ -515,7 +515,7 @@ What do you do?
 &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="15" name="Horde 2" tags="" position="414,1119" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[zombies|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/zombies.jpg?raw=1]]
+[img[zombies|data/img/zombies.jpg]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
 &lt;&lt;nobr&gt;&gt;&lt;&lt;audio &quot;zombies&quot; volume 1 play&gt;&gt;&lt;&lt;timed 11s&gt;&gt;&lt;&lt;audio $itemSoundPlay[0] play&gt;&gt;&lt;&lt;/timed&gt;&gt;
@@ -535,7 +535,7 @@ You run out about half a mile away from your house and start &lt;&lt;if $isFirea
 &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Horde 3" tags="" position="415,1271" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[zombiegrab|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/zombie-hand.jpg?raw=true]]
+[img[zombiegrab|data/img/zombie-hand.jpg]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;&lt;&lt;type 50ms&gt;&gt;\A zombie &lt;&lt;if $isFirearm[0] is true&gt;&gt;grabs your arm as you try to reload!&lt;&lt;else&gt;&gt;grabs your $itemSlot[0] from behind!&lt;&lt;/if&gt;&gt; It won’t let go!! You have to drop the $itemSlot[0] and pull out the $itemSlot[1] to get the zombie off your arm. 
 
@@ -553,7 +553,7 @@ What do you do?:
 &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="17" name="Stall" tags="" position="339,1465" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[zombie2|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/zombies-2.jpeg?raw=true]]
+[img[zombie2|data/img/zombies-2.jpeg]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
 &lt;&lt;type 50ms&gt;&gt;\
@@ -569,7 +569,7 @@ You’re getting overwhelmed and need to back out and wait for your family to as
 &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="Death 2" tags="" position="614,1515" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[grave|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/gravestone.jpg?raw=true]]
+[img[grave|data/img/gravestone.jpg]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
 &lt;&lt;type 50ms&gt;&gt;\
@@ -585,7 +585,7 @@ You’re getting overwhelmed and need to back out and wait for your family to as
 &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Horde 4" tags="" position="339,1614" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[zombie2|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/zombies-2.jpeg?raw=true]]
+[img[zombie2|data/img/zombies-2.jpeg]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
 &lt;&lt;nobr&gt;&gt;&lt;&lt;audio &quot;zombies&quot; play&gt;&gt;&lt;&lt;/nobr&gt;&gt;
@@ -606,7 +606,7 @@ What do you do?
 
 </tw-passagedata><tw-passagedata pid="20" name="Horde 5" tags="" position="339,1765" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[zombie2|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/zombies-2.jpeg?raw=true]]
+[img[zombie2|data/img/zombies-2.jpeg]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
 &lt;&lt;nobr&gt;&gt;
@@ -623,7 +623,7 @@ You feel the zombie so close to you on your &lt;&lt;if $direction is &quot;left&
 &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Ending 1" tags="" position="339,1915" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[house-day|https://www.dropbox.com/s/hufx24du7fohi0i/house.jpg?raw=1]]
+[img[house-day|data/img/house.jpg]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;&lt;&lt;audio &quot;zombies&quot; fadeout&gt;&gt;
 &lt;&lt;type 50ms&gt;&gt;\The zombies stood no chance against you and your family armed with $itemSlot[1], $npcItemSlot[0], $npcItemSlot[1], and $npcItemSlot[2]. 
@@ -639,7 +639,7 @@ You all have a big sigh of relief as the night of terror is over and life in a z
 &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Escape 1" tags="" position="29,1423" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[garage|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/car.jpg?raw=true]]
+[img[garage|data/img/car.jpg]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
 &lt;&lt;nobr&gt;&gt;&lt;&lt;timed 4s&gt;&gt;&lt;&lt;audio &quot;car&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/nobr&gt;&gt;&lt;&lt;type 50ms&gt;&gt;\The zombies have gotten a lot closer since you saw them.
@@ -658,7 +658,7 @@ You slam on the pedal and burst through the crowd of zombies and hit the open ro
 &lt;/div&gt;
 &lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Escape 2" tags="" position="32,1583" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[safehouse|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/safehouse.jpg?raw=true]]
+[img[safehouse|data/img/safehouse.jpg]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;&lt;&lt;audio &quot;zombies&quot; fadeout&gt;&gt;
 &lt;&lt;type 50ms&gt;&gt;\Plowing through the zombies busted one of your headlights, so the drive is dark and tough to see, but luckily you remember the way to the safehouse.
@@ -678,7 +678,7 @@ What do you say?
 &lt;/div&gt;
 </tw-passagedata><tw-passagedata pid="24" name="Ending 2" tags="" position="31,1733" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[safehouse|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/safehouse.jpg?raw=true]]
+[img[safehouse|data/img/safehouse.jpg]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
 &lt;&lt;type 50ms&gt;&gt;\“Hmmmm. Fair enough. You don’t show the normal signs of infection. Welcome to the safehouse.” the guard says as they let you in.
@@ -694,7 +694,7 @@ After a few days of laying low at the safehouse you go back to check on your hou
 </tw-passagedata><tw-passagedata pid="25" name="Almost Death 2" tags="" position="599,1341" size="100,100">
 &lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
-[img[zombiegrab|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/zombie-hand.jpg?raw=true]]
+[img[zombiegrab|data/img/zombie-hand.jpg]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;&lt;&lt;nobr&gt;&gt;
 &lt;&lt;audio &quot;zombies&quot; play&gt;&gt;
