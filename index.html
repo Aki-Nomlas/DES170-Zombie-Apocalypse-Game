@@ -239,7 +239,7 @@ a:hover::before {
 
 .startBtn>a {
 	font-size: 2.3vw;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Story Setup" tags="" position="445,235" size="100,100">&lt;&lt;audio &quot;ambient&quot; volume 0 fadein&gt;&gt;&lt;&lt;audio &quot;ambient&quot; loop play&gt;&gt;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Story Setup" tags="" position="445,235" size="100,100">&lt;&lt;audio &quot;ambient&quot; volume 0 fadeto 0.6&gt;&gt;&lt;&lt;audio &quot;ambient&quot; loop play&gt;&gt;
 &lt;div class=&quot;mainContainerGrid&quot;&gt;
 	&lt;div class=&quot;mainScript&quot;&gt;
 	&lt;&lt;type 50ms&gt;&gt;\
@@ -367,12 +367,7 @@ UIBar.stow();
 Config.debug = false;
 Config.ui.stowBarInitially = true;
 
-$(document.body).on(&quot;mouseenter&quot;, &quot;a&quot;, function () {
-	$(&quot;&lt;audio&gt;&lt;/audio&gt;&quot;).attr({
-		src      : &quot;data/audio/click1.m4a&quot;,
-		autoplay : &quot;autoplay&quot;
-	});
-});
+!function(){ $(document).on(&#39;mouseenter&#39;, &#39;a&#39;, function () { new Wikifier (null, &#39;&lt;&lt;audio &quot;click1&quot; play&gt;&gt;&#39;); }); }();
 !function(){ $(document).on(&#39;click&#39;, &#39;a&#39;, function(){ new Wikifier (null, &#39;&lt;&lt;audio &quot;click2&quot; play&gt;&gt;&#39;); }); }();
 &lt;&lt;/script&gt;&gt;
 </tw-passagedata><tw-passagedata pid="8" name="Horde 1" tags="" position="405,952" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
@@ -726,7 +721,7 @@ background:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(data/img/fores
 	background-size: cover;
 	display: block;
 &lt;/style&gt;
-&lt;&lt;nobr&gt;&gt;&lt;&lt;masteraudio volume 0.75&gt;&gt;&lt;&lt;/nobr&gt;&gt;
+&lt;&lt;nobr&gt;&gt;&lt;&lt;masteraudio volume 0.5&gt;&gt;&lt;&lt;/nobr&gt;&gt;
 &lt;div class = &quot;mainTitle&quot;&gt;
 SURVIVE THE NIGHT
 &lt;/div&gt;
