@@ -172,11 +172,11 @@ a:hover::before {
 	color: #660000;
 }
 
-#emphasis {
+.emphasis {
 	font-weight: bold;
 	color: #EE4B2B;
 }
-  </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Story Setup" tags="" position="382,70" size="200,200">&lt;&lt;audio &quot;ambient&quot; loop play&gt;&gt;
+  </style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Story Setup" tags="" position="382,69" size="200,200">&lt;&lt;audio &quot;ambient&quot; loop play&gt;&gt;
 &lt;div class=&quot;mainContainerGrid&quot;&gt;
 	&lt;div class=&quot;mainScript&quot;&gt;
 	&lt;&lt;type 50ms&gt;&gt;\
@@ -194,7 +194,7 @@ a:hover::before {
 	[img[house-day|https://www.dropbox.com/s/hufx24du7fohi0i/house.jpg?raw=1]]
 	&lt;/div&gt;
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="2" name="Choice 1 - Night" tags="" position="396,335" size="200,200">&lt;div class=&quot;mainContainerGrid&quot;&gt;
+</tw-passagedata><tw-passagedata pid="2" name="Choice 1 - Night" tags="" position="397,335" size="200,200">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 	&lt;div class=&quot;mainScript&quot;&gt;
 	&lt;&lt;type 50ms&gt;&gt;\
 	Your days now mostly consist of listening to the news on the radio and preparing for your next encounter where you either have to fight or flee.
@@ -215,14 +215,15 @@ What would you do?
 	&lt;div class=&quot;mainImg&quot;&gt;
 	[img[house-night|https://www.dropbox.com/s/e65ir4gmangc2o0/house-night.jpg?raw=1]]
 	&lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Downstairs 1" tags="" position="219,567" size="100,100">&lt;&lt;nobr&gt;&gt;&lt;&lt;set $isDownstairs to true&gt;&gt;&lt;&lt;/nobr&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Downstairs 1" tags="" position="219,568" size="100,100">&lt;&lt;nobr&gt;&gt;&lt;&lt;set $isDownstairs to true&gt;&gt;&lt;&lt;/nobr&gt;&gt;
 &lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
 [img[interior|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/interior.jpg?raw=1]]
 &lt;/div&gt;
 	&lt;div class=&quot;mainScript&quot;&gt;
 	&lt;&lt;type 50ms&gt;&gt;\
-&lt;&lt;timed 7900ms&gt;&gt;&lt;&lt;audio &quot;creak&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 9s&gt;&gt;&lt;&lt;audio &quot;creak&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 15s&gt;&gt;&lt;&lt;audio &quot;creak&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 “I guess I should be responsible and sleep on the couch”, you say to yourself.
 
 You get your pillow, bundle up in your blanket, and start to drift away when suddenly you hear a creak on the front porch steps.
@@ -246,7 +247,7 @@ You get your pillow, bundle up in your blanket, and start to drift away when sud
 
 You run to grab your shotgun, but it’s too late! 
 
-&lt;span id=&quot;emphasis&quot;&gt;The zombies are everywhere and you can’t escape. YOU DIED&lt;/span&gt;
+&lt;span class=&quot;emphasis&quot;&gt;The zombies are everywhere and you can’t escape. YOU DIED&lt;/span&gt;
 	\&lt;&lt;/type&gt;&gt;
 	&lt;/div&gt;
 	&lt;div class=&quot;mainInteraction&quot;&gt;
@@ -270,30 +271,33 @@ You run to grab your shotgun, but it’s too late!
 
 [[Continue|Death 1]]\&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Explore" tags="" position="417,960" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Explore" tags="" position="418,960" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
 [img[porch|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/porch.jpg?raw=1]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
+&lt;&lt;timed 14500ms&gt;&gt;&lt;&lt;audio &quot;bush&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;type 50ms&gt;&gt;\
 You grab your $itemSlot[0], strap the $itemSlot[1] to your back, and peek through the window. The glare from the light prevents you from seeing outside. You need to open the front door.
 
-You grab your $itemSlot[0] and slowly peek out the front door. (play bush ruffling sound) You catch the tail end of a raccoon running into the bushes!
+You ready your $itemSlot[0] and slowly peek out the front door. You catch the tail end of a raccoon running into the bushes!
 
-“Phew”, you say as a sigh of relief. But as you close the door you spot in the distance you spot something else…\&lt;&lt;/type&gt;&gt;
+“Phew”, you say as a sigh of relief. But as you close the door you spot in the distance something else…\&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;mainInteraction&quot;&gt;
 &lt;&lt;type 50ms&gt;&gt;\
 [[Continue|Horde 1]]
 \&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="StoryInit" tags="" position="746,75" size="200,200">&lt;&lt;cacheaudio &quot;ambient&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/ambient.wav?raw=true&quot;&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="7" name="StoryInit" tags="" position="746,74" size="200,200">&lt;&lt;cacheaudio &quot;ambient&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/ambient.wav?raw=true&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;door&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/door_sound.mp3?raw=true&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;zombies&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/zombies.wav?raw=true&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;bite&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/bite.wav?raw=true&quot;&gt;&gt;
-&lt;&lt;cacheaudio &quot;gun&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/shotgun.mp3?raw=true&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;gun&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/shotgun2.mp3?raw=true&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;creak&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/creak.wav?raw=true&quot;&gt;&gt;
 &lt;&lt;cacheaudio &quot;sword&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/sword.wav?raw=true&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;bush&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/bush.wav?raw=true&quot;&gt;&gt;
+&lt;&lt;cacheaudio &quot;car&quot; &quot;https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/audio/car.wav?raw=true&quot;&gt;&gt;
 &lt;&lt;script&gt;&gt;
 
 UIBar.stow();
@@ -314,7 +318,7 @@ setup.items[&#39;Shotgun&#39;] = {
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
 &lt;&lt;type 50ms&gt;&gt;\
-&lt;span id=&quot;emphasis&quot;&gt;OH NO! A HORDE OF 50 ZOMBIES LUMBERING TOWARD YOUR HOUSE!&lt;/span&gt;
+&lt;span class=&quot;emphasis&quot;&gt;OH NO! A HORDE OF 50 ZOMBIES LUMBERING TOWARD YOUR HOUSE!&lt;/span&gt;
 
 Out of exhaustion you forgot to put out the fire and the zombies must be attracted to it. If you wake your family they’ll know it was your fault the zombies found you.
 \&lt;&lt;/type&gt;&gt;
@@ -327,7 +331,7 @@ What do you do?
 [[&quot;Go out and fight them with your &quot; + $itemSlot[0] + &quot; and &quot; + $itemSlot[1]|Horde 2]]
 \&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Item Pick 1" tags="" position="265,758" size="100,100">&lt;&lt;silently&gt;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="9" name="Item Pick 1" tags="" position="266,758" size="100,100">&lt;&lt;silently&gt;&gt;
 &lt;&lt;set $shotgun to false&gt;&gt;
 &lt;&lt;set $pistol to false&gt;&gt;
 &lt;&lt;set $rifle to false&gt;&gt;
@@ -341,7 +345,7 @@ What do you do?
 [img[interior|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/interior.jpg?raw=1]]
 &lt;/div&gt;
 	&lt;div class=&quot;mainScript&quot;&gt;
-	&lt;&lt;type 50ms&gt;&gt;\What &lt;span id=&quot;emphasis&quot;&gt;TWO weapons&lt;/span&gt; do you take with you?
+	&lt;&lt;type 50ms&gt;&gt;\What &lt;span class=&quot;emphasis&quot;&gt;TWO weapons&lt;/span&gt; do you take with you?
 &lt;span id = &quot;itemDefaultState&quot;&gt;
 &lt;&lt;linkreplace &quot;Shotgun&quot;&gt;&gt;&quot;&quot;&quot;&gt; Shotgun&quot;&quot;&quot;&lt;&lt;set $shotgun to true&gt;&gt;&lt;&lt;set _packweight++&gt;&gt;&lt;&lt;if _packweight gte 2&gt;&gt;&lt;&lt;goto &quot;Item Pick 2&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
 &lt;&lt;linkreplace &quot;Pistol&quot;&gt;&gt;&quot;&quot;&quot;&gt; Pistol&quot;&quot;&quot;&lt;&lt;set $pistol to true&gt;&gt;&lt;&lt;set _packweight++&gt;&gt;&lt;&lt;if _packweight gte 2&gt;&gt;&lt;&lt;goto &quot;Item Pick 2&quot;&gt;&gt;&lt;&lt;/if&gt;&gt;&lt;&lt;/linkreplace&gt;&gt;
@@ -436,9 +440,9 @@ DEBUG MSG:
 &lt;&lt;type 50ms&gt;&gt;\
 “HEY GUYS WE’VE GOT A BIG PROBLEM!”, you scream as you barge into the upstairs bedroom. 
 
-“YOU LEFT FIRE ON DIDN’T YOU?!” they scream back
+“YOU LEFT THE FIRE ON DIDN’T YOU?!” they scream back
 
-“That’s not important right now!! I have the $itemSlot[0] and $itemSlot[1], grab the $npcItemSlot[0], $npcItemSlot[1], $npcItemSlot[2].”
+“That’s not important right now!! I have the $itemSlot[0] and $itemSlot[1], grab the $npcItemSlot[0], $npcItemSlot[1], and $npcItemSlot[2].”
 \&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;mainInteraction&quot;&gt;
@@ -450,11 +454,12 @@ What do you do?
 \&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="15" name="Horde 2" tags="" position="427,1317" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
+</tw-passagedata><tw-passagedata pid="15" name="Horde 2" tags="" position="427,1316" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
 [img[zombies|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/zombies.jpg?raw=1]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
+&lt;&lt;timed 11s&gt;&gt;&lt;&lt;audio $itemSoundPlay[0] play&gt;&gt;&lt;&lt;/timed&gt;&gt;
 &lt;&lt;type 50ms&gt;&gt;\
 “I can’t let my family know it was all my fault, they’d never forgive me for putting us in danger.”
 
@@ -475,6 +480,7 @@ You run out about half a mile away from your house and start &lt;&lt;if $isFirea
 [img[zombiegrab|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/zombie-hand.jpg?raw=true]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
+&lt;&lt;audio &quot;zombies&quot; play&gt;&gt;
 &lt;&lt;type 50ms&gt;&gt;\A zombie &lt;&lt;if $isFirearm[0] is true&gt;&gt;grabs your arm as you try to reload!&lt;&lt;else&gt;&gt;grabs your $itemSlot[0] from behind!&lt;&lt;/if&gt;&gt; It won’t let go!! You have to drop the $itemSlot[0] and pull out the $itemSlot[1] to get the zombie off your arm. 
 
 Your family hears the commotion and looks out the upstairs window – they see you fighting for your life and start to get ready to come help.
@@ -485,7 +491,7 @@ Your family hears the commotion and looks out the upstairs window – they see y
 What do you do?:
 
 [[Stall until your family can get there|Stall]]
-[[Keep fighting hard|Death 2]]
+[[Keep fighting hard|Almost Death 2]]
 \&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -505,7 +511,7 @@ You’re getting overwhelmed and need to back out and wait for your family to as
 [[It’s go time!|Horde 4]]
 \&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="Death 2" tags="" position="635,1533" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="18" name="Death 2" tags="" position="814,1643" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
 [img[grave|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/gravestone.jpg?raw=true]]
 &lt;/div&gt;
@@ -513,7 +519,7 @@ You’re getting overwhelmed and need to back out and wait for your family to as
 &lt;&lt;type 50ms&gt;&gt;\
 “NOOOOOOO” your family screams as you turn from human to a fresh zombie. 
 
-You and the other zombies are too much for your family to handle - they get overrun.
+&lt;span class = &quot;emphasis&quot;&gt;You and the other zombies are too much for your family to handle - they get overrun. &lt;/span&gt;
 \&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
 &lt;div class=&quot;mainInteraction&quot;&gt;
@@ -522,11 +528,12 @@ You and the other zombies are too much for your family to handle - they get over
 &lt;&lt;return &quot;Try again&quot;&gt;&gt;
 \&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Horde 4" tags="" position="352,1812" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Horde 4" tags="" position="352,1811" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
 [img[zombie2|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/zombies-2.jpeg?raw=true]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
+&lt;&lt;nobr&gt;&gt;&lt;&lt;audio &quot;zombies&quot; play&gt;&gt;&lt;&lt;/nobr&gt;&gt;
 &lt;&lt;type 50ms&gt;&gt;\
 You still have your $itemSlot[1], and your family picked up the $npcItemSlot[0], $npcItemSlot[1], and $npcItemSlot[2]. Once the zombies get in range, you all start massacring them.
 
@@ -547,6 +554,11 @@ What do you do?
 [img[zombie2|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/zombies-2.jpeg?raw=true]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio &quot;zombies&quot; play&gt;&gt;
+&lt;&lt;timed 2s&gt;&gt;&lt;&lt;audio $itemSoundPlay[1] play&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 9s&gt;&gt;&lt;&lt;audio $itemSoundPlay[1] play&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;/nobr&gt;&gt;
 &lt;&lt;type 50ms&gt;&gt;\You look to your $direction and $itemSoundText[1]! 
 
 You feel the zombie so close to you on your &lt;&lt;if $direction is &quot;left&quot;&gt;&gt;right&lt;&lt;else&gt;&gt;left&lt;&lt;/if&gt;&gt;, they’re practically breathing on your neck. You quickly dive forward, turn around, and $itemSoundText[1].\&lt;&lt;/type&gt;&gt;
@@ -570,17 +582,18 @@ You all have a big sigh of relief as the night of terror is over and life in a z
 &lt;&lt;type 50ms&gt;&gt;\
 \&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Escape 1" tags="" position="43,1620" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Escape 1" tags="" position="42,1620" size="100,100">&lt;div class=&quot;mainContainerGrid&quot;&gt;
 &lt;div class=&quot;mainImg&quot;&gt;
 [img[garage|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/car.jpg?raw=true]]
 &lt;/div&gt;
 &lt;div class=&quot;mainScript&quot;&gt;
+&lt;&lt;nobr&gt;&gt;&lt;&lt;timed 4s&gt;&gt;&lt;&lt;audio &quot;car&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/nobr&gt;&gt;
 &lt;&lt;type 50ms&gt;&gt;\The zombies have gotten a lot closer since you saw them.
 
 “EVERYONE TO THE CAR!”, you shout intensely.
 
 You and your family quickly pile in. As you open the garage door, the zombies are charging in.
-(Play car engine revving sound)
+
 You slam on the pedal and burst through the crowd of zombies and hit the open road, but you’re still miles from the nearest safehouse.
 \&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
@@ -623,6 +636,29 @@ After a few days of laying low at the safehouse you go back to check on your hou
 \&lt;&lt;/type&gt;&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="25" name="Almost Death 2" tags="" position="612.5,1538.5" size="100,100">
+&lt;div class=&quot;mainContainerGrid&quot;&gt;
+&lt;div class=&quot;mainImg&quot;&gt;
+[img[zombiegrab|https://github.com/Aki-Nomlas/DES170-Zombie-Apocalypse-Game/blob/main/data/img/zombie-hand.jpg?raw=true]]
+&lt;/div&gt;
+&lt;div class=&quot;mainScript&quot;&gt;
+&lt;&lt;nobr&gt;&gt;
+&lt;&lt;audio &quot;zombies&quot; play&gt;&gt;
+&lt;&lt;timed 4s&gt;&gt;&lt;&lt;audio $itemSoundPlay[1] play&gt;&gt;&lt;&lt;/timed&gt;&gt;
+&lt;&lt;timed 13s&gt;&gt;&lt;&lt;audio &quot;bite&quot; play&gt;&gt;&lt;&lt;/timed&gt;&gt;&lt;&lt;/nobr&gt;&gt;
+&lt;&lt;type 50ms&gt;&gt;\Good thing you had all that $itemSlot[1] practice! You’ve been &lt;&lt;if $isFirearm[1] is true&gt;&gt;blasting&lt;&lt;else&gt;&gt;chopping&lt;&lt;/if&gt;&gt; zombies left and right. Your family just got downstairs but they’re still a half mile away. They scream out your name and you look back – critical mistake.
+
+&lt;span class = &quot;emphasis&quot;&gt;The zombies got you in the neck!&lt;/span&gt;\&lt;&lt;/type&gt;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mainInteraction&quot;&gt;
+&lt;&lt;type 50ms&gt;&gt;\
+[[Continue|Death 2]]
+\&lt;&lt;/type&gt;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+
+
 </tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
